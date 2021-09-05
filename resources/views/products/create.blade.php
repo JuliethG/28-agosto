@@ -37,7 +37,7 @@
                 <input type="text" class="form-control" name="image">
             </div>
             <div class="form-group">
-                <label for=""><strong>Compañia</strong></label>
+                <label for=""><strong>ID Compañia</strong></label>
                 <input type="text" class="form-control" name="company_id">
             </div>
             <hr>

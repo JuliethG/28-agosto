@@ -74,7 +74,6 @@
                         <li class="page-item"><a class="page-link" href="products?page=2">2</a></li>
                         <li class="page-item"><a class="page-link" href="products?page=3">3</a></li>
                         <li class="page-item"><a class="page-link" href="products?page=4">4</a></li>
-                        <li class="page-item"><a class="page-link" href="products?page=5">5</a></li>
                         </li>
                     </ul>
             </div>
