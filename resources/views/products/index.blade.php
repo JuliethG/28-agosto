@@ -25,6 +25,11 @@
     <div class="row">
         <div class="col-md-12">
             <a href="{{route('products.create')}}" class="btn btn-outline-dark">Registrar Nuevo Producto</a>
+            @if(session('status'))
+                <div class="alert alert-success mt-3">
+                    {{session('status')}}
+                </div>
+            @endif
             <hr>
             <div class="table-responsive">
                 <table class="table table-striped">

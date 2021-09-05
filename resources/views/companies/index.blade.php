@@ -12,7 +12,7 @@
 <!-- navbar -->
 <nav class="navbar navbar-dark bg-dark" style="background-color: #e3f2fd;">
     <div class="container-md">
-        <a class="navbar-brand mb-0 h1" href="companies.index">Compañias</a>
+        <a class="navbar-brand mb-0 h1" href="companies">Compañias</a>
         <a class="navbar-brand mb-0 h1" href="products">Productos</a>
         <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -25,6 +25,11 @@
        <div class="row">
            <div class="col-md-12">
                <a href="{{route('companies.create')}}" class="btn btn-outline-dark">Registrar Nueva Compañia</a>
+               @if(session('status'))
+                   <div class="alert alert-success mt-3">
+                       {{session('status')}}
+                   </div>
+               @endif
                <hr>
                <div class="table-responsive">
                  <table class="table table-hover">

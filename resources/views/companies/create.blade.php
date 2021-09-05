@@ -21,11 +21,11 @@
             <form action="{{route('companies.store')}}" method="post">
                 @csrf
                 <div class="form-group">
-                    <label for="">Nombre</label>
+                    <label for=""><strong>Nombre</strong></label>
                     <input type="text" class="form-control" name="name">
                 </div>
                 <div class="form-group">
-                    <label for="">Nit</label>
+                    <label for=""><strong>Nit</strong></label>
                     <input type="text" class="form-control" name="nit">
                 </div>
                 <hr>

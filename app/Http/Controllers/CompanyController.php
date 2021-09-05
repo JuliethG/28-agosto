@@ -30,7 +30,7 @@ class CompanyController extends Controller
             'name'=>$request->input('name'),
             'nit'=>$request->input('nit')
         ]);
-        return redirect('companies');
+        return redirect('companies')->with('status', 'Compañia '.$request->input('name').' creada');
     }
     public function edit($id)
     {
@@ -44,6 +44,7 @@ class CompanyController extends Controller
             'name'=>$request->input('name'),
             'nit'=>$request->input('nit'),
         ]);
-        Return redirect('companies');
+        Return redirect('companies')->with('status','Se ha actualizado correctamente '.$request->input('name'));
+
     }
 }

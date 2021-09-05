@@ -33,13 +33,13 @@ class ProductController extends Controller
            'image'=>$request->input('image'),
            'company_id'=>$request->input('company_id')
        ]);
-       return redirect('products');
+       return redirect('products')->with('status', 'Producto '.$request->input('name').' creado');
    }
 
   public function destroy($id)
   {
       $products = Product::find($id)->delete();
-      return redirect('products');
+      return redirect('products')->with('status', 'Producto '.$id.' eliminado');
   }
 
   public function edit($id)
@@ -57,6 +57,6 @@ class ProductController extends Controller
           'image'=>$request->input('image'),
           'company_id'=>$request->input('company_id')
       ]);
-      Return redirect('products');
+      Return redirect('products')->with('status','Se ha actualizado correctamente '.$request->input('name'));
   }
 }
