@@ -19,7 +19,7 @@ class CompanyTableSeeder extends Seeder
 
         for($i = 0; $i<=20;$i++) {
             Company::create([
-                'name'=>$faker->name,
+                'name'=>$faker->company,
                 'nit'=>$faker->randomNumber()
             ]);
         }
